@@ -1,0 +1,17 @@
+{
+  "name": "caravaggio-now",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Fabrizio Ruggeri",
+  "license": "ISC",
+  "dependencies": {
+    "@now/node": "^1.6.1",
+    "@types/node": "^14.0.13",
+    "caravaggio": "^3.1.1"
+  }
+}
