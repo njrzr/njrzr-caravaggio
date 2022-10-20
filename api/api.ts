@@ -1,4 +1,4 @@
-import { NowRequest, NowResponse } from '@now/node';
+import { VercelRequest, VercelResponse } from '@vercel/node';
 import caravaggio from 'caravaggio';
 import { Config } from 'caravaggio/dist/config/default';
 
@@ -31,7 +31,7 @@ const config: Config = {
   },
 }
 
-export default async (req: NowRequest, res: NowResponse) => {
+export default async (req: VercelRequest, res: VercelResponse) => {
   const handler = caravaggio(config);
   // const { handler } = await createAPIServer();
   const result = await handler(req, res);
